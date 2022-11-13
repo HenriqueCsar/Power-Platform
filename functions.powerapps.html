@@ -3,6 +3,48 @@
 Ação => OnSelect 
 
 Função => Back() - Voltar para a página anterior.
-Função => Navigate(BrowserScreen) -> Navegar até a página 'BrowserScreen'.
+    Exemplos:
+        Back(ScreenTransition.CoverRight) - Volta para a página anterior com transição da página anterior vindo em direção a direita.
+        Back(Fade) - Abaixa a opacidade da página atual e aparece a anterior.
+
+
+Função => SubmitForm(Form3) - Envia o formulário para o CDS(Dataverse)
+
+
+Função => ResetForm(Form3) - Excluir o que foi escrito no formulário. 
+    Exemplos:
+        ResetForm(Form3);;Back(Fade);;
+
+
+Função => NewForm(Form3) - Iniciar um formulário de um formulário de edição já criado.
+    Exemplos:
+        NewForm(Form3);;Navigate(Editform)
+
+Função => EditForm.Mode - Modo de edição de formulário. 
+    Exemplos: 
+        Condicional: if(EditForm.Mode = FormMode.Edit; "XXX", "YYY")
+
+Função => Notify("") - Retorno de script passada no arg1 na parte superior do app.
+    Exemplos:
+        Notify("Falha ao enviar o formulário";NotificationType.Error)
+ 
+Função => Navigate(BrowserScreen) - Navegar até a página 'BrowserScreen'.
+
+
+Função => Remove() - Remove um dado do Dataverse.
+    Exemplos:
+        Remove(Usuários; Gallery.Selected);; Back(Fade)
+
+
+Função => Refresh(table) - Atualizar dados da Gallery.
+    Exemplos:
+        Refresh(Usuários);
+
+Ação => Gallery => Items
+
+Função => SortByColumns(table, column, type) - Utilizada para ordernação dos valores da Galeria.
+    Exemplos:           
+        SortByColumns(Usuários;"address1_postofficebox";Ascending)
+
 
 </pre>
