@@ -2,6 +2,7 @@
 
 Ação => OnSelect 
 
+
     Função => Back() - Voltar para a página anterior.
         Exemplos:
             Back(ScreenTransition.CoverRight) - Volta para a página anterior com transição da página anterior vindo em direção a direita.
@@ -46,5 +47,15 @@ Ação => Gallery => Items
             Exemplos:           
                 SortByColumns(Usuários;"address1_postofficebox";Ascending)
 
+
+
+How to do:
+    => Selecionar o e-mail da uma x pessoa clicada em outra tela? => Galeria.Selected.'Campo'
+        Exemplos:BrowserGallery1.Selected.'E-mail'
+
+    => Selecionar sempre o primeiro ou último elemento da Galeria? => First(Galeria.AllItems).'Campo'
+        Exemplos:
+            First(BrowserGallery1.AllItems).'E-mail'
+            Last(BrowserGallery1.AllItems).'E-mail'
 
 </pre>
