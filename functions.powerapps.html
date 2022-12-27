@@ -1,11 +1,17 @@
 <pre>
 
 Ação => OnSelect
+    Função => Select(NomeDoObjeto) - Chama a ação de Onselect do objeto.
+        Exemplos: Select(BtnRiodeJaneiro) => chama a função onselect o objeto.
+
+
+
     Função => Set(Variavel; Camera1.Stream) - Salva o valor a foto na variavel.
      Exemplos:
             Set(TakePhoto; Camera1.Stream) - Da variavel é possível enviar para o componente 'image' apenas colocando
             Na ação 'Image' o nome da Variavel, no caso, 'TakePhoto'
 
+            
     Função => Navigate(PaginaName, ScreenTransition.CoverRight)
         Exemplos:
             Navigate(TelaPrincipalAgendamentos; ScreenTransition.CoverRight)
