@@ -1,9 +1,17 @@
 <pre>
+    
+
+Ação => Items => ShowColumns(Escritorios; "Nome"; "ID") => Retona um x número de colunas da tabela 'Escritorios'.
+    Exemplo: ShowColumns(Escritorios; "Nome"; "ID")
+
 
 Ação => DisplayMode => View => Dessa forma a pessoa só poderar ver o objetivo sem editar no formulário.    
+    Exemplo:
+        Parent.DisplayMode.View
 
 Ação => Update => Objeto data.SelectedDate => Para implementar o retorno da data no formulário.
-
+    Exemplo:
+        DatePicker1.SelectedDate
 
 Ação => Text
     Função => Now() - Retorna a data e hora atual
@@ -20,9 +28,9 @@ Ação => Text
 
 
 Ação => OnSelect
+
     Função => Select(NomeDoObjeto) - Chama a ação de Onselect do objeto.
         Exemplos: Select(BtnRiodeJaneiro) => chama a função onselect o objeto.
-
 
 
     Função => Set(Variavel; Camera1.Stream) - Salva o valor a foto na variavel.
@@ -36,6 +44,11 @@ Ação => OnSelect
             Navigate(TelaPrincipalAgendamentos; ScreenTransition.CoverRight)
             or
             Navigate(TelaPrincipalAgendamentos; Fade)
+
+        ------ É possível passar um variavel local por parametro do Navigate:
+            Exemplo:
+                Variavel: UpdateContext((variavelocal; "Sou uma variavel local."))
+                Navigate(TelaPrincipalAgendamentos; Fade; variavelocal)
 
 
     Função => Back() - Voltar para a página anterior.
