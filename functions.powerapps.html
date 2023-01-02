@@ -1,10 +1,8 @@
 <pre>
     
-
 Ação => Items => ShowColumns(Escritorios; "Nome"; "ID") => Retona um x número de colunas da tabela 'Escritorios'.
     Exemplos: ShowColumns(Escritorios; "Nome"; "ID")
               ShowColumns(Filter(Escritorios; Int(CidadeID)=IdCidade); "Nome"; "ID")
-
 
 Ação => DisplayMode => View => Dessa forma a pessoa só poderar ver o objetivo sem editar no formulário.    
     Exemplo:
@@ -15,16 +13,23 @@ Ação => Update => Objeto data.SelectedDate => Para implementar o retorno da da
         DatePicker1.SelectedDate
 
 Ação => Text
+    Função => CountRows(TabelaName) => Realiza a contagem de linhas da tabela TabelaName.
+        Exemplo:
+            CountRows(Filter(Agendamentos; EscritorioID=Dropdown.Selected.ID))
+
+
     Função => LookUp() => Retorna o valor de um x campo a nível de apenas uma linha.
-    
+
 
     Função => Now() - Retorna a data e hora atual
         Exemplos: 
             TimeValue(Now()) --- TimeValue - Retorna somente a hora da função Now()
         
+
     Função => Time() - Utilizada para converter inteiro em data
         Exemplos:
             Time(18;0;0) => Retorno será do tipo hora 18:00:00
+
 
     Função => User() - Utilizado para dar o retorno de quem está acessando o app.
         Exemplos:
