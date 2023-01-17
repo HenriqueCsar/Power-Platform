@@ -121,9 +121,6 @@ How to do(Label):
             Last(BrowserGallery1.AllItems).'E-mail'
 
 
-	Ação(Onselect):
-	=> Selecionar o maior valor de uma tabela.
-	First(SortByColumns(Tasks; "ID"; Descending)).ID
 
 
 
