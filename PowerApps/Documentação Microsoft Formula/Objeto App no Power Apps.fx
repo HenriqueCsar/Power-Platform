@@ -14,3 +14,4 @@ If( Form_1.Unsaved;
 
 //Tratamento de Erro
 IfError( 1/Slider1.Value; 0)
+
