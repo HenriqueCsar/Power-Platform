@@ -7,4 +7,9 @@ Propriedade	Descrição
 // Acceleration.Y	Forward e back. Forward é um número positivo.
 // Acceleration.Z	Up e down. Up é um número positivo.
 
+//App.ActiveScreen	Tela que está sendo mostrada. 
 Rotelo de dados: "App.ActiveScreen.Name: "&App.ActiveScreen.Name
+
+
+//O sinal Compass retorna a direção da bússola na parte superior da tela. A direção se baseia no norte magnético.
+Rotelo de dados: Compass.Heading
