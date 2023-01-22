@@ -1,4 +1,5 @@
-//É possível você ativar e desativa um signal, por exemplo o sinal de Acceleration ou location
+//É possível você ativar e desativa um signal, por exemplo Location
+//Com objetivo de não gastar bateria é possível desativar
 
 Exemplo:
 
