@@ -8,3 +8,18 @@ ClearCollect( IceCreamSales;
  )
 )
 
+
+// AddColumns( Table, ColumnName1, Formula1 [, ColumnName2, Formula2, ... ] )
+
+// Table - obrigatório. Tabela na qual operar.
+// ColumnName(s) - obrigatório. Nomes de colunas para adicionar. Você deve especificar uma cadeia de caracteres (por exemplo, "Nome" com aspas duplas incluídas) para esse argumento.
+// Formula(s) - obrigatório. Fórmulas para avaliar cada registro. O resultado é adicionado como o valor da nova coluna correspondente. Você pode fazer referência a outras colunas da tabela nesta fórmula.
+
+ //Dentro da função items da tabela coloquei, desse modo, é possível chamar a coluna Revenues
+AddColumns( IceCreamSales; "Revenues"; UnitPrice * QuantitySold )
+
+
+// DropColumns( Table, ColumnName1 [, ColumnName2, ... ] )
+
+// Table - obrigatório. Tabela na qual operar.
+// ColumnName(s) - obrigatório. Nomes de colunas para remover. Você deve especificar uma cadeia de caracteres (por exemplo, "Nome" com aspas duplas incluídas) para esse argumento.
