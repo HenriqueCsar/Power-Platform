@@ -11,3 +11,6 @@ Form_1.Unsaved
 If( Form_1.Unsaved;
     "Tem ctz que deseja sair sem salvar?"
 )
+
+//Tratamento de Erro
+IfError( 1/Slider1.Value; 0)
