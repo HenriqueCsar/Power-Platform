@@ -6,4 +6,6 @@
 Search(CityPopulations; TextInput1.Text;"Country")
 
 // por exemplo:
+//Iniciando e terminando com o valor informado no TextInput1
 Filter(CityPopulations;StartsWith(Country; TextInput1.Text) || EndsWith(Country; TextInput1.Text))
+
