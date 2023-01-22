@@ -13,8 +13,9 @@ Rótulo de dados: "App.ActiveScreen.Name: "&App.ActiveScreen.Name
 
 
 //O sinal Compass retorna a direção da bússola na parte superior da tela. A direção se baseia no norte magnético.
-Rótulo de dados: Compass.Heading
+Rótulo de dados: "Compass.Heading"&Compass.Heading
 
 
+//Verificar se o dispositivo está conectado a internet.
 Connection.Connected	Retorna um valor booliano true ou false que indica se o dispositivo está conectado a uma rede.
 Connection.Metered	Retorna um valor booliano true ou false que indica se a conexão é limitada.
