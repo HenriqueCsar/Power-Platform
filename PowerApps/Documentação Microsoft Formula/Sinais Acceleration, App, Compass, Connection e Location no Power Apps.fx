@@ -6,10 +6,15 @@ Propriedade	Descrição
 // Acceleration.X	Right e left. Right é um número positivo.
 // Acceleration.Y	Forward e back. Forward é um número positivo.
 // Acceleration.Z	Up e down. Up é um número positivo.
+Rótulo de dados: "Acceleration.X:"&Acceleration.X
 
 //App.ActiveScreen	Tela que está sendo mostrada. 
-Rotelo de dados: "App.ActiveScreen.Name: "&App.ActiveScreen.Name
+Rótulo de dados: "App.ActiveScreen.Name: "&App.ActiveScreen.Name
 
 
 //O sinal Compass retorna a direção da bússola na parte superior da tela. A direção se baseia no norte magnético.
-Rotelo de dados: Compass.Heading
+Rótulo de dados: Compass.Heading
+
+
+Connection.Connected	Retorna um valor booliano true ou false que indica se o dispositivo está conectado a uma rede.
+Connection.Metered	Retorna um valor booliano true ou false que indica se a conexão é limitada.
