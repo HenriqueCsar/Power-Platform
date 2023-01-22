@@ -8,6 +8,9 @@ Propriedade	Descrição
 // Acceleration.Z	Up e down. Up é um número positivo.
 Rótulo de dados: "Acceleration.X:"&Acceleration.X
 
+//Alterando cor do fundo de acordo com a acelaração
+If(Round(Abs(Acceleration.X);0)=0 || Round(Abs(Acceleration.X);0)=1 || Round(Abs(Acceleration.X);0)=2; White; Gray)
+
 //App.ActiveScreen	Tela que está sendo mostrada. 
 Rótulo de dados: "App.ActiveScreen.Name: "&App.ActiveScreen.Name
 
