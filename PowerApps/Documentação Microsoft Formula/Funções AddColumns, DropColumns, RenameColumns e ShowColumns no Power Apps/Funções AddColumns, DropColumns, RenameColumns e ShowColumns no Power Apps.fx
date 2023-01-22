@@ -23,3 +23,18 @@ AddColumns( IceCreamSales; "Revenues"; UnitPrice * QuantitySold )
 
 // Table - obrigatório. Tabela na qual operar.
 // ColumnName(s) - obrigatório. Nomes de colunas para remover. Você deve especificar uma cadeia de caracteres (por exemplo, "Nome" com aspas duplas incluídas) para esse argumento.
+
+//Colocando AddColumans Junto com Coleção s
+
+ClearCollect( IceCreamSales;
+ Table(
+    	{ Flavor: "Strawberry"; UnitPrice: 1,99; QuantitySold: 20 };
+    	{ Flavor: "Chocolate"; UnitPrice: 2,99; QuantitySold: 45 };
+    	{ Flavor: "Vanilla"; UnitPrice: 1,50; QuantitySold: 35 }
+ )
+);;
+ClearCollect(
+    FIceCreamSales;
+    AddColumns(IceCreamSales; "Revenue"; UnitPrice * QuantitySold)
+
+)
