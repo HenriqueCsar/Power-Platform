@@ -40,6 +40,6 @@ ClearCollect( IceCreamSales;
 );;
 ClearCollect(
     FIceCreamSales;
-    AddColumns(IceCreamSales; "Revenue"; UnitPrice * QuantitySold)
+    AddColumns(RenameColumns(IceCreamSales; "Flavor"; "Sabor") "Revenue"; UnitPrice * QuantitySold)
 
 )
